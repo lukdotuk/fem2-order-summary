@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --pale: hsl(225, 100%, 94%);
+  --bright: hsl(245, 75%, 52%);
+  --very-pale: hsl(225, 100%, 98%);
+  --desaturated: hsl(224, 23%, 55%);
+  --dark: hsl(223, 47%, 23%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1440px;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--pale);
+  margin: 0 auto;
+
+  /* Pattern background */
+  background-image: url(./assets/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top;
+}
+button {
+  font-family: inherit;
+}
+
+/* Centralizing */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  background-color: #fff;
+  width: 450px;
+  height: 695px;
+  border-radius: 15px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Top picture background */
+  background-image: url(./assets/images/illustration-hero.svg);
+  background-repeat: no-repeat;
+}
+h1 {
+  margin-top: 265px;
+  margin-bottom: 20px;
+  font-size: 1.65rem;
+  font-weight: 900;
+  color: var(--dark);
+}
+.description {
+  font-weight: 500r;
+  margin: 0 70px;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.6;
+  color: var(--desaturated);
+} 
+.middle {
+  height: 100px;
+  width: 350px;
+  background-color: #f7f9ff;
+  border-radius: 15px;
+  display: flex;
+  padding: 24px;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.middle img {
+  width: 50px;
+  height: auto;
+}
+.middle p {
+  padding: 5px 0;
+}
+.ln1 {
+  font-weight: 700;
+  color: var(--dark);
+}
+.ln2 {
+  color: var(--desaturated);
+}
+.middle a {
+  margin-left: auto;
+  text-decoration: none;
+  color: var(--bright);
+}
+.payment {
+  width: 350px;
+  background-color: #766cf1;
+  border: none;
+  border-radius: 15px;
+  padding: 16px 0;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 22px;
+  box-shadow: 0 10px 10px rgba(56, 42, 225, 0.190291);
+}
+.cancel {
+  width: 350px;
+  background-color: inherit;
+  border: none;
+  padding: 16px 0;
+  font-weight: 900;
+  color: var(--dark);
+}
+
+.attribution {
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
